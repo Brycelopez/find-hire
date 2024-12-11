@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #ff6f61;
+    margin-bottom: 25px;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    color: #eaeaea;
+    margin-bottom: 25px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #162447;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  input[type="text"], textarea, form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #4b6584;
+    font-size: 1.1em;
+    background-color: #e94560;
+    color: #fff;
+  }
+  
+  input[type="text"]:focus, textarea:focus, form select:focus {
+    border-color: #ff6f61;
+    outline: none;
+  }
+  
+  textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  form button, button[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover, button[type="submit"]:hover {
+    background-color: #ff4c3b;
+  }
+  
+  h2 + table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #1f4068;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #4b6584;
+  }
+  
+  table th {
+    background-color: #1a1a2e;
+    color: #ff6f61;
+  }
+  
+  table td {
+    background-color: #162447;
+  }
+  
+  table tr:hover {
+    background-color: #4b6584;
+  }
+  
+  form select {
+    margin-bottom: 12px;
+  }
+  

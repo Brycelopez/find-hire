@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .messages {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  
+  .message {
+    margin-bottom: 15px;
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .message.sent {
+    background-color: #4a90e2;
+    color: #fff;
+    align-self: flex-end;
+  }
+  
+  .message.received {
+    background-color: #e0e0e0;
+    color: #333;
+    align-self: flex-start;
+  }
+  
+  .message::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #e0e0e0 transparent;
+    display: none;
+  }
+  
+  .message.sent::after {
+    left: auto;
+    right: 10px;
+    border-color: transparent transparent #4a90e2 transparent;
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+    margin: 10px 20px 20px 20px;
+    width: calc(100% - 40px);
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
